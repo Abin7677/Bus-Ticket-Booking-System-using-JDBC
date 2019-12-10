@@ -1,0 +1,369 @@
+# Bus-Ticket-Booking-System-using-JDBC
+               BUS TICKET BOOKING SYSTEM
+
+
+
+
+	
+
+
+  
+	
+Hands-on Exercise Objective	
+	
+ 
+Step 1. The program should display the menu as follows
+1. Admin Login
+2. Customer Login
+3. Exit
+Step 2. If 1 is pressed, get the admin login details and validate. On valid login, show the below menu
+2.1. Add details(Bus Id,Bus Type,Start location,End location,Busfare,No of seats,Date,Time)
+2.2. View =>It displays the bus details
+2.3. Update => Admin updates the bus details
+2.4. Logout => Should display the menu on Step 1. Note: Until logout, the menu on Step 2 should be repeated on completion of
+Step 2.1 ,Step 2.2,step 2.3
+Step 3. If 2 is entered, the validate the Customer Login details and on successful
+login, show the below menu
+3.1. View bus details
+3.2. Book Ticket
+a. Ask the customer to enter the Booking ID and Bus ID
+b. Ask the Customer to enter the start and end location
+c. Ask the Customer to enter the date and time of booking
+d. Ask the customer to enter the no of persons to calculate the total cost
+e. total cost= no.of persons * busfare
+f. Ask the customer to confirm booking and add the booking details to booking table
+g. Update the no. of seats in bus detail table
+3.3. View Booking(Display booking table details)
+a. Fields of Booking table=>Booking id,Bus id,Start,End,Date,Time,No. of person,cost
+3.4. Cancel the ticket
+a. Ask the customer to enter the booking Id
+b. Get the time of cancelling. If the customer cancels ticket 2 hours before the bus starting time he will get the refund otherwise not.
+c. Ask the Customer for confirmation of cancel and cancel the ticket
+3.5. Customer Logout => Should display the menu on step 1. Note: Until logout, the menu on Step 3 should be repeated on completion of
+Step 3.1 ,Step 3.2,Step 3.3 and Step 3.4
+
+
+Page 2 of 2
+
+Instruction:
+1. Predefined list of Admin & Customer ( at least 2 users in Admin and 2 in Agent )
+with min of these fields ( Username, Password )
+2. Accessing the details using Database is preferred. 
+3. All inputs to be validated and necessary error message has to be printed. 
+4. The given fields on the questions are the mandatory fields. You are allowed
+to add additional tables or fields based on your design to meet the above said
+functionality.
+
+Output
+1)Admin
+2)Customer
+3)Exit
+
+Enter the choice
+1
+Enter the Username:
+anjali@123.com
+Enter the password:
+Anjali@123
+Successfully verified
+1)Add details
+2)View
+3)Update
+4)Logout
+
+Enter the choice
+1
+Enter the bus ID:
+3
+Enter the type of bus:
+AC
+Enter the starting place:
+Trivandrum
+Enter the ending place:
+Palakkad
+Enter the busfare:
+600
+Enter the number of seats:
+30
+Enter the date:
+2019/12/11
+Enter the Time:
+12
+Bus details added successfully
+1)Add details
+2)View
+3)Update
+4)Logout
+
+Enter the choice
+2
+##############################
+
+BUS ID->1
+BUS TYPE->AC
+Starting place->Kollam
+End place->Thrissur
+BUS FARE->500
+NO. OF SEATS AVAILABLE->30
+DATE->2019/12/10
+Time->
+11
+###############################
+##############################
+
+BUS ID->2
+BUS TYPE->NAC
+Starting place->Kollam
+End place->Thrissur
+BUS FARE->300
+NO. OF SEATS AVAILABLE->30
+DATE->2019/12/10
+Time->
+11
+###############################
+##############################
+
+BUS ID->3
+BUS TYPE->AC
+Starting place->Trivandrum
+End place->Palakkad
+BUS FARE->600
+NO. OF SEATS AVAILABLE->30
+DATE->2019/12/11
+Time->
+12
+###############################
+1)Add details
+2)View
+3)Update
+4)Logout
+
+Enter the choice
+3
+********************************
+BUS ID->1
+BUS TYPE->AC
+********************************
+********************************
+BUS ID->2
+BUS TYPE->NAC
+********************************
+********************************
+BUS ID->3
+BUS TYPE->AC
+********************************
+Do you want to update:(yes/no)
+yes
+Enter the BUS ID:
+3
+Enter the start location to update:
+Trivandrum
+Enter the end location to update:
+Palakkad
+Enter the Bus fare to update:
+800
+Database updated successfully
+1)Add details
+2)View
+3)Update
+4)Logout
+
+Enter the choice
+4
+Admin logout successfully
+1)Admin
+2)Customer
+3)Exit
+
+Enter the choice
+2
+Enter the Username:
+sree@123.com
+Enter the password:
+Sree@123
+Successfully verified
+1)View busdetails
+2)Book Ticket
+3)View Booking
+4)Cancel
+5)Logout
+
+Enter the choice
+1
+##############################
+
+BUS ID->1
+BUS TYPE->AC
+Starting place->Kollam
+End place->Thrissur
+BUS FARE->500
+NO. OF SEATS AVAILABLE->30
+DATE->2019/12/10
+Time->11
+###############################
+##############################
+
+BUS ID->2
+BUS TYPE->NAC
+Starting place->Kollam
+End place->Thrissur
+BUS FARE->300
+NO. OF SEATS AVAILABLE->30
+DATE->2019/12/10
+Time->11
+###############################
+##############################
+
+BUS ID->3
+BUS TYPE->AC
+Starting place->Trivandrum
+End place->Palakkad
+BUS FARE->800
+NO. OF SEATS AVAILABLE->30
+DATE->2019/12/11
+Time->12
+###############################
+1)View busdetails
+2)Book Ticket
+3)View Booking
+4)Cancel
+5)Logout
+
+Enter the choice
+2
+Enter the Booking ID:
+1
+Enter the BUS ID:
+2
+Enter the start location:
+Kollam
+Enter the end location:
+Thrissur
+Enter the date of booking:
+2019/12/10
+Enter the time:
+7
+Enter the no. of customers:
+3
+Busfare->900
+Enter 1 to confirm booking(1)
+1
+Your booking is confirmed
+Thank you....!!!
+Booking details added successfully
+1)View busdetails
+2)Book Ticket
+3)View Booking
+4)Cancel
+5)Logout
+
+Enter the choice
+3
+##############################
+
+BOOKING_ID->1
+BUS ID->2
+START->Kollam
+END->Thrissur
+DATE->2019/12/10
+TIME->7
+NO. OF PERSON->3
+COST->
+900
+###############################
+1)View busdetails
+2)Book Ticket
+3)View Booking
+4)Cancel
+5)Logout
+
+Enter the choice
+2
+Enter the Booking ID:
+2
+Enter the BUS ID:
+1
+Enter the start location:
+Kollam
+Enter the end location:
+Thrissur
+Enter the date of booking:
+2019/12/09
+Enter the time:
+6
+Enter the no. of customers:
+2
+Busfare->1000
+Enter 1 to confirm booking(1)
+1
+Your booking is confirmed
+Thank you....!!!
+Booking details added successfully
+1)View busdetails
+2)Book Ticket
+3)View Booking
+4)Cancel
+5)Logout
+
+Enter the choice
+3
+##############################
+
+BOOKING_ID->1
+BUS ID->2
+START->Kollam
+END->Thrissur
+DATE->2019/12/10
+TIME->7
+NO. OF PERSON->3
+COST->
+900
+###############################
+##############################
+
+BOOKING_ID->2
+BUS ID->1
+START->Kollam
+END->Thrissur
+DATE->2019/12/09
+TIME->6
+NO. OF PERSON->2
+COST->
+1000
+###############################
+1)View busdetails
+2)Book Ticket
+3)View Booking
+4)Cancel
+5)Logout
+
+Enter the choice
+4
+Enter the booking ID
+1
+Enter the time of cancellation:
+8
+Enter bus ID:
+2
+Refund Amount->600
+Do you want to cancel?(yes/no)
+yes
+Ticket cancelled successfully
+1)View busdetails
+2)Book Ticket
+3)View Booking
+4)Cancel
+5)Logout
+
+Enter the choice
+5
+Customer logout successfully
+1)Admin
+2)Customer
+3)Exit
+
+Enter the choice
+3
+Exited successfully
+
+
